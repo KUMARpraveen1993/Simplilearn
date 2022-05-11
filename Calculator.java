@@ -1,11 +1,10 @@
 package class3;
 import java.util.Scanner;
 
-public class Calculator {
-	
-
-	
-	public static void main(String[] args) {
+ class Cal1 {
+	 
+ 
+	 void operations() {
 		Scanner cal = new Scanner(System.in);
 		
 	System.out.println("please enter the first number");
@@ -31,22 +30,30 @@ public class Calculator {
 	else if (n==2) {
 		int result=num1-num2;
 		System.out.println("value of substraction:  "+result);
-		
-
-	}
+		}
 	else if (n==3) {
 		int result=num1*num2;
 		System.out.println("value of multiplication:  "+result);
-		
-
-		
-	}
+		}
 	else if (n==4) {
 		int result=num1/num2;
 		System.out.println("value of divition:  "+result);
-
-
-		
+     }
+	else {
+		System.exit(0);
 	}
 	}
-}
+ }
+	public class Calculator {
+		  public static void main(String[] args) {
+		        
+		      Code1 c = new Code1();
+		        for(; ;) //infinite loop
+		        {
+		            c.operations();
+		        }
+		        
+		  }
+	 }
+	 
+ 
